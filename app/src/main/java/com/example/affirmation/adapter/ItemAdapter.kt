@@ -12,10 +12,12 @@ import com.example.affirmation.model.Affirmation
 
 
 /**
-* Adapter for the [RecycleView] in [MainActivity]. Displays [Affirmation] data object/
-*/
-class ItemAdapter(private val context: Context,
-                  private val dataset: List<Affirmation>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+ * Adapter for the [RecycleView] in [MainActivity]. Displays [Affirmation] data object/
+ */
+class ItemAdapter(
+    private val context: Context,
+    private val dataset: List<Affirmation>
+) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     /**
      * Provide a reference to the view for each data item
@@ -23,7 +25,7 @@ class ItemAdapter(private val context: Context,
      * you provide access to all the views for a data item in a view holder.
      * Each data item is just an Affirmation object.
      */
-    class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view){
+    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
         val imageView: ImageView = view.findViewById(R.id.item_image)
     }

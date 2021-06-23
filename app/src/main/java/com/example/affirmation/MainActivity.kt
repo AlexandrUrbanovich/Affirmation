@@ -1,8 +1,7 @@
 package com.example.affirmation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.affirmation.adapter.ItemAdapter
 import com.example.affirmation.data.Datasource
